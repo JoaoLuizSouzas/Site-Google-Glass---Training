@@ -45,7 +45,7 @@ nav#menu {
 }
 
 nav#menu ul {  /*Serão editados os itens referentes à lista não ordenada do menu de navegação em questão*/
-    list-style: none; /*Remove os demarcadores da lista, como circulos, quadrados, números, etc*/
+    list-style: none; /*Remove os marcadores da lista, como circulos, quadrados, números, etc*/
     text-transform: uppercase; /*Passa o conteúdo em questão para caixa alta*/
     position: absolute; /*Permite que o conteúdo possa flutuar por todo o site, ao contrário da relative, que só permite a flutuação dentro do container*/
     top: -20px; /*Eleva a lista para o top do site, ultrapassando a margem e 0px, ficando bem na beiradinha mesmo*/
@@ -57,8 +57,24 @@ nav#menu li {  /*Aqui só serão editados os itens referentes à tag li do menu 
     background-color: #dddddd;/*Altera a cor de fundo dos itens list para o tom especificado*/
     padding: 10px; /*Cria um espaçamento dentro da caixa de 10px*/
     margin: 2px; /*Altera o espaço de fora do objeto em questão, espaço entre os botões*/;
+    transition: background-color 1s; /*Adiciona um efeito de transição de 1 segundo no background-color dos list itens*/
+
+}
+
+nav#menu li:hover {
+    background-color: #606060; /*hover = efeito ao passar o mouse em um item, neste caso, irá alterar a cor de fundo do list iten*/
 }
 
 nav#menu h1{
     display: none; /*oculta o item referenciado do site, mas mantém no código*/
+}
+
+nav#menu a {  /*Altera a aparêncai dos itens que são link, devido ao parametro "a"*/
+    color: #000000;
+    text-decoration: none; /*remove o sublinhado dos itens, remove as decorações*/
+}
+
+nav#menu a:hover {
+    color: #ffffff; /* quando passar o mouse devido ao hover nos links, o link ficará com a cor informada*/
+    text-decoration: underline; /*adiciona o underliine nos itens qnd passar o mouse por cima*/
 }
