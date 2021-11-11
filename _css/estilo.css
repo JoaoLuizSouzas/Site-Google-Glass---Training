@@ -1,13 +1,22 @@
 @charset "UTF-8";
 
 body {
-    background-color: hsla(165, 81%, 93%, 0.5);
+    background-color: #dddddd;
     color: rgba(0, 0, 0, 1);
 }
 p {
     text-align: justify;
     text-indent: 50px;
 }
+
+div#interface  {  /*Realiza as configurações de CSS na interface*/
+    width: 900px; /*Altera a largura da interface para 900px*/
+    background-color: #ffffff;
+    margin: -20px auto 0px auto; /*Define o tamanho das 4 margens da interface, a opção "auto" faz com  que o navegador deixe a margem centralizada*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /*Adiciona uma sombra no container da interface, sendo nja ordem: deslocamento lateral, deslocamento vertical, espalhamento e cor */
+    padding: 10px; /*Padding é o espaço interno do objeto, no caso, da interface. cima, direita, baixo, esquerda*/
+}
+
 /* Formatação de imagens com legendas */
 
 figure.foto-legenda {
@@ -77,4 +86,15 @@ nav#menu a {  /*Altera a aparêncai dos itens que são link, devido ao parametro
 nav#menu a:hover {
     color: #ffffff; /* quando passar o mouse devido ao hover nos links, o link ficará com a cor informada*/
     text-decoration: underline; /*adiciona o underliine nos itens qnd passar o mouse por cima*/
+}
+
+header#cabecalho img#icone { /*Configuração da imagem de que foi determinada como ícone e está dentro do cabecalho*/
+    position: absolute; /*Posição absoluta pode transitar por todo o site*/
+    left: 750px;
+    top: 40px;
+}
+
+header#cabecalho {   /*Serão configurados todos os objetos dentro do cabeçalho*/
+    
+
 }
