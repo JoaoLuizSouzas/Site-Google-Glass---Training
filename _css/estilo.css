@@ -91,10 +91,29 @@ nav#menu a:hover {
 header#cabecalho img#icone { /*Configuração da imagem de que foi determinada como ícone e está dentro do cabecalho*/
     position: absolute; /*Posição absoluta pode transitar por todo o site*/
     left: 750px;
-    top: 40px;
+    top: 70px;
+}
+
+header#cabecalho h1{  /*Será editado todo objeto q for da tag h1, dentro do header denominado cabecalho*/
+    font-family: arial, sans-serif; /*altera o tipo da fonte*/
+    font-size: 30pt; /*altera o tamanho da fonte*/
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;  /*altera o espaço da margem de dentro do objeto container*/
+    margin-bottom: 0px; /*edita apenas a margem inferior*/
+}
+
+header#cabecalho h2{ /*todo item h2 dentro do cabecalho será editado*/
+    font-family: arial, sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px; /*altera a margem de dentro do container*/
+    margin-top: 0px; /*edita apenas a margem superior*/ 
 }
 
 header#cabecalho {   /*Serão configurados todos os objetos dentro do cabeçalho*/
-    
+    border-bottom: 1px #606060 solid;  /*Altera as configurações da borda inferior, 3 parametos: largura, cor e formato*/
+    height: 150px; /*altura*/
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; /*Adiciona uma imagem como background, o no-repeat é pra ele não replicar a imagem*/
 
 }
