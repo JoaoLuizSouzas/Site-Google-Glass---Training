@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+@font-face {
+    font-family: 'FonteLogo'; /*Aqui é determinado um nome para a fonte que será utilizada*/
+    src: url("../_fonts/bubblegum-sans-regular.otf"); /*Informado o caminho do aquivo da fonte*/
+}
 
 body {
     background-color: #dddddd;
@@ -95,7 +100,7 @@ header#cabecalho img#icone { /*Configuração da imagem de que foi determinada c
 }
 
 header#cabecalho h1{  /*Será editado todo objeto q for da tag h1, dentro do header denominado cabecalho*/
-    font-family: arial, sans-serif; /*altera o tipo da fonte*/
+    font-family: 'FonteLogo', sans-serif; /*altera o tipo da fonte*/
     font-size: 30pt; /*altera o tamanho da fonte*/
     color: #606060;
     text-shadow: 1px 1px 1px rgba(0,0,0,.6);
@@ -104,7 +109,7 @@ header#cabecalho h1{  /*Será editado todo objeto q for da tag h1, dentro do hea
 }
 
 header#cabecalho h2{ /*todo item h2 dentro do cabecalho será editado*/
-    font-family: arial, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     color: #888888;
     font-size: 15pt;
     padding: 0px; /*altera a margem de dentro do container*/
@@ -115,5 +120,6 @@ header#cabecalho {   /*Serão configurados todos os objetos dentro do cabeçalho
     border-bottom: 1px #606060 solid;  /*Altera as configurações da borda inferior, 3 parametos: largura, cor e formato*/
     height: 150px; /*altura*/
     background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; /*Adiciona uma imagem como background, o no-repeat é pra ele não replicar a imagem*/
-
 }
+
+
