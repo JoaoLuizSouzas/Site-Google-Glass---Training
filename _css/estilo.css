@@ -93,6 +93,29 @@ nav#menu a:hover {
     text-decoration: underline; /*adiciona o underliine nos itens qnd passar o mouse por cima*/
 }
 
+section#corpo {  /*realiza a edição do section que foi criado no html5*/
+    display: block; /*faz com que seja mostrado a seção como um bloco*/
+    width: 520px; /*define a largura da sessão*/
+    float: left; /*significa flutuar, fazer com que a section flutue para o laddo esquerdo*/
+    border-right: 1px solid #606060; /*cria uma linha do lado direito, 3 parametros: expessura em pixels, tipo e a cor*/
+    padding-right: 15px;
+}
+
+aside#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+}
+
+footer#rodape {
+    clear: both; /*faz com que o conteudo seja mostrado fora da divisao*/
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center; /*centraliza o texto do rodapé*/
+}
+
 header#cabecalho img#icone { /*Configuração da imagem de que foi determinada como ícone e está dentro do cabecalho*/
     position: absolute; /*Posição absoluta pode transitar por todo o site*/
     left: 750px;
